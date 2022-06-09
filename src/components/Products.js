@@ -1,4 +1,5 @@
 import ProductsItems from './ProductsItems';
+import Button from './Button';
 
 let angebote = [
     {
@@ -21,21 +22,30 @@ let angebote = [
 const Products = () => {
     return (
         <div>
-            <ProductsItems
-                url={angebote[0].url}
-                name={angebote[0].name}
-                price={angebote[0].price}
-            />
-            <ProductsItems
-                url={angebote[1].url}
-                name={angebote[1].name}
-                price={angebote[1].price}
-            />
-            <ProductsItems
-                url={angebote[2].url}
-                name={angebote[2].name}
-                price={angebote[2].price}
-            />
+            <section>
+                <ProductsItems
+                    url={angebote[0].url}
+                    name={angebote[0].name}
+                    price={angebote[0].price}
+                />
+                <Button />
+            </section>
+            <section>
+                <ProductsItems
+                    url={angebote[1].url}
+                    name={angebote[1].name}
+                    price={angebote[1].price}
+                />
+                <Button />
+            </section>
+            <section>
+                <ProductsItems
+                    url={angebote[2].url}
+                    name={angebote[2].name}
+                    price={angebote[2].price}
+                />
+                <Button />
+            </section>
         </div>
 
     )
